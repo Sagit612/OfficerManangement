@@ -89,6 +89,10 @@ namespace OfficerManagement
         {
             Console.WriteLine(str);
         }
+        public static void InputError()
+        {
+            Console.WriteLine("Invalid Input ...");
+        }
         public static void ShowMessage(bool status)
         {
             if (status) Console.WriteLine("SUCCESSFUL!!!");

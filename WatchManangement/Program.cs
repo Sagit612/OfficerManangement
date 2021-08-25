@@ -134,6 +134,7 @@ namespace OfficerManagement
                     case MenuOption.EXIT:
                         return;
                     default:
+                        IO.InputError();
                         break;
                 }
             }
