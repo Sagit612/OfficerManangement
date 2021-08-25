@@ -78,5 +78,9 @@ namespace OfficerManagement
             }
             return false;
         }
+        public int CountOfficers()
+        {
+           return _officers.Count;
+        }
     }
 }

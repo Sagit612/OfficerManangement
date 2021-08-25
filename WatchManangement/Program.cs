@@ -128,6 +128,9 @@ namespace OfficerManagement
                              IO.EnterLevel()
                             ));
                         break;
+                    case MenuOption.COUNT_OFFICERS:
+                        IO.ShowNumberOfficer(managerOfficer.CountOfficers());
+                        break;
                     case MenuOption.EXIT:
                         return;
                     default:

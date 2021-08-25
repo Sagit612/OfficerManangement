@@ -13,7 +13,7 @@ namespace OfficerManagement
         public const int SEARCH_BY_ID = 4;
         public const int UPDATE_ENGINEER = 5;
         public const int UPDATE_WORKER = 6;
-        public const int STATS = 7;
+        public const int COUNT_OFFICERS = 7;
         // TODO
         public const int SEARCH_BY_CLASS_NAME = 8;
         public const int SEARCH_BY_AGE = 9;
@@ -93,6 +93,14 @@ namespace OfficerManagement
         {
             if (status) Console.WriteLine("SUCCESSFUL!!!");
             else Console.WriteLine("Failed!!!");
+        }
+        public static void ShowNumberOfficer(int numberOfficer)
+        {
+            if (numberOfficer == 1)
+            {
+                Console.WriteLine($"There is {numberOfficer} officer");
+            }
+            Console.WriteLine($"There are {numberOfficer} officers");
         }
     }
 }
