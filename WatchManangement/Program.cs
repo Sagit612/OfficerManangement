@@ -100,13 +100,13 @@ namespace OfficerManagement
                         //}
                         break;
                     case MenuOption.GET_ALL:
-                        Console.WriteLine(managerOfficer.GetAllOfficerInfo());
+                        IO.ToScreen(managerOfficer.GetAllOfficerInfo());
                         break;
                     case MenuOption.REMOVE_STUDENT:
                         IO.ShowMessage(managerOfficer.RemoveOfficerById(IO.EnterId()));
                         break;
                     case MenuOption.SEARCH_BY_ID:
-                        Console.WriteLine(managerOfficer.SearchOfficerById(IO.EnterId()));
+                        IO.ToScreen(managerOfficer.SearchOfficerById(IO.EnterId()));
                         break;
                     case MenuOption.UPDATE_ENGINEER:
                         IO.ShowMessage(managerOfficer.UpdateEngineerById
@@ -119,13 +119,13 @@ namespace OfficerManagement
                             ));
                         break;
                     case MenuOption.UPDATE_WORKER:
-                        IO.ShowMessage(managerOfficer.UpdateEngineerById
+                        IO.ShowMessage(managerOfficer.UpdateWorkerById
                             (IO.EnterId(),
                              IO.EnterName(),
                              IO.EnterAge(),
                              IO.EnterGender(),
                              IO.EnterAddress(),
-                             IO.EnterBranch()
+                             IO.EnterLevel()
                             ));
                         break;
                     case MenuOption.EXIT:

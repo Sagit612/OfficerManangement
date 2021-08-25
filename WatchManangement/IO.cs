@@ -47,7 +47,7 @@ namespace OfficerManagement
         {
             Console.WriteLine("\t\t\t\t|\t   Enter \"a\" to add Engineer     \t|");
             Console.WriteLine("\t\t\t\t|\t   Enter \"b\" to add Worker       \t|");
-            Console.WriteLine("\t\t\t\t|\t   Enter \"v\" to exit       \t|");
+            //Console.WriteLine("\t\t\t\t|\t   Enter \"v\" to exit       \t|");
             return Console.ReadLine();
         }
         public static int EnterId()
@@ -84,6 +84,10 @@ namespace OfficerManagement
         {
             Console.WriteLine("Enter level:");
             return int.Parse(Console.ReadLine());
+        }
+        public static void ToScreen(string str)
+        {
+            Console.WriteLine(str);
         }
         public static void ShowMessage(bool status)
         {

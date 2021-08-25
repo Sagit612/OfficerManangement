@@ -43,11 +43,7 @@ namespace OfficerManagement
         public string SearchOfficerById(int id)
         {
             Officer officerInList = (Engineer)_officers.FirstOrDefault(o => o.id.Equals(id));
-            if (officerInList != null)
-            {
-                return officerInList.ToString();
-                
-            }
+            if (officerInList != null) return officerInList.ToString();
             return "Not exist";
         }
         public bool UpdateEngineerById(int id, string name, int age, string gender,
